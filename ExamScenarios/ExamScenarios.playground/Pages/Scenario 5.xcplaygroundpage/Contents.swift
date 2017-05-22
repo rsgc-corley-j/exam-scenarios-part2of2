@@ -24,6 +24,22 @@ import PlaygroundSupport
 let canvas = Canvas(width: 400, height: 600)
 
 // Your code below...
+canvas.lineColor = Color.black
+
+for x in stride(from: 0, to: 400, by: 60){
+    for y in stride(from: 0, to: 400, by: 60){
+     
+        if x - y == 0 {
+            canvas.lineColor = Color.white
+        }else{
+           canvas.lineColor = Color.purple
+        }
+        
+        //draw lines here
+        
+    }
+}
+
 
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.

@@ -22,7 +22,15 @@ import PlaygroundSupport
 //: ## Your code starts here
 // Create a new canvas
 let canvas = Canvas(width: 400, height: 600)
-//canvas.draw
+
+for x in stride(from: 0, to: 400, by: 44){
+for y in stride(from: 0, to: 400, by: 44){
+
+for t in stride(from: 0, to: 44, by: 1){
+canvas.drawLine(fromX: 0 + t + x, fromY: 0 + y, toX: 44 + x, toY: 44 - t + y)
+}
+}
+}
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = canvas.imageView
