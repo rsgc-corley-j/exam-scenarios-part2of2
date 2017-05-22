@@ -22,8 +22,7 @@ import PlaygroundSupport
 //: ## Your code starts here
 // Create a new canvas
 let canvas = Canvas(width: 400, height: 600)
-
-
+//canvas.draw
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = canvas.imageView

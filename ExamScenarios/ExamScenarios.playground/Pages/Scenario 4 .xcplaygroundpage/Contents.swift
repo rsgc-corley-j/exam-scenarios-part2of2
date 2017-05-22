@@ -31,6 +31,40 @@ let blue = Color(hue: 240, saturation: 80, brightness: 50, alpha: 50)
 let black = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
 
 // Your code below...
+canvas.drawShapesWithBorders = false
+
+for x in stride(from: 0, to: 400, by: 95){
+    for y in stride(from: 0, to: 400, by: 95){
+        //blue
+        
+        
+        
+        if x - y == 0{
+            canvas.fillColor = Color(hue: 37, saturation: 93, brightness: 98, alpha: 100)
+        }else if x == 285 && y == 95{
+            canvas.fillColor = Color(hue: 37, saturation: 93, brightness: 98, alpha: 100)
+        }else if x == 380 && y == 0{
+            canvas.fillColor = Color(hue: 37, saturation: 93, brightness: 98, alpha: 100)
+        }else{
+         canvas.fillColor = Color(hue: 326, saturation: 99, brightness: 93, alpha: 100)
+        }
+        canvas.drawRoundedRectangle(centreX: 10 + x, centreY: -25 + y, width: 90, height: 90)
+        
+    }
+}
+
+for x in stride(from: 0, to: 400, by: 95){
+    for y in stride(from: 0, to: 380, by: 95){
+        //blue
+        
+        canvas.fillColor = Color(hue: 240, saturation: 80, brightness: 50, alpha: 50)
+        canvas.drawRoundedRectangle(centreX: -25 + x, centreY: 45 + y, width: 90, height: 90)
+        
+    }
+}
+
+
+
 
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
